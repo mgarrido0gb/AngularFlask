@@ -1,0 +1,32 @@
+
+.toolbar{
+    background: blue;
+    color: white;
+    
+}
+
+.toolbar .toolbar-row{
+    position: fixed;
+}
+
+
+.apertura{ 
+    width: 23%;
+    background: midnightblue;
+    
+}
+
+
+.container .apertura .lista-sidenav .campos-sidenav {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+.container .apertura .lista-sidenav .campos-sidenav:hover {
+    background: rgb(49, 49, 253);
+    color: white;
+    transition-duration: 0.7s;
+    font-size: 19px;
+}

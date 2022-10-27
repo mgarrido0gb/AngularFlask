@@ -1,6 +1,7 @@
 <mat-toolbar class="toolbar">
     <mat-toolbar-row class="toolbar-row">
         <button mat-icon-button class="toolbar-button">
+            <!--Al hacer click se abre el sidebar-->
             <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
         </button>
         <h1 class="titulo"><mat-icon>face</mat-icon>API-Usuarios</h1>
@@ -9,42 +10,24 @@
 
 <mat-sidenav-container class="container">
     <mat-sidenav class="apertura" #sidenav opened="true" mode="side">
-        
+        <!--se añaden las rutas creadas en app routing-->
         <mat-nav-list class="lista-sidenav">
-            <a class="campos-sidenav" mat-list-item><mat-icon>home</mat-icon>INICIO</a>
-            <a class="campos-sidenav" mat-list-item><mat-icon>summarize</mat-icon>PROCESOS</a>
-            <a class="campos-sidenav" mat-list-item><mat-icon>info</mat-icon>SOBRE LA API</a>
+            <a routerLink="/inicio" class="campos-sidenav" mat-list-item><mat-icon>home</mat-icon>INICIO</a>
+            <a routerLink="/procesos" class="campos-sidenav" mat-list-item><mat-icon>summarize</mat-icon>PROCESOS</a>
+            <a routerLink="/sobre" class="campos-sidenav" mat-list-item><mat-icon>info</mat-icon>SOBRE LA API</a>
            
         </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content>
-    <div class="texto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi animi, sed libero reprehenderit nulla explicabo ut error earum odio enim! Aperiam laboriosam mollitia culpa iste voluptatum similique in dolores.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi porro harum possimus magni blanditiis et magnam quisquam corrupti illo maxime necessitatibus ut id, fuga, ratione ipsum. Dolorum deleniti tempore consectetur.
-        Tempora est exercitationem quos, corporis praesentium expedita iure perferendis omnis eaque recusandae ducimus dignissimos officia minus, facere cupiditate beatae optio reiciendis porro quisquam fugiat? Dolorem, consectetur? Possimus dolorem ducimus illum.
-        Ab quae doloribus amet, vel aut sequi voluptatem cumque fugiat ipsam autem labore, illum modi, assumenda quasi. Earum laudantium distinctio iste architecto fugiat sint asperiores vitae aperiam quis? Esse, consequuntur.
-        Doloremque, suscipit vitae! Quisquam placeat ut consequuntur, molestias exercitationem reiciendis aperiam quaerat, possimus libero doloremque harum ipsam maiores quidem saepe deserunt magni soluta a? Ab eligendi tempore enim eaque harum!
-        Ut assumenda maiores molestias ratione amet repellat accusantium ipsum perferendis. Eos et, saepe similique nulla impedit reprehenderit aliquid ducimus, eveniet voluptatem praesentium a optio beatae iusto qui animi voluptatum aliquam.
-        Odio accusantium rerum, id enim expedita harum itaque? Optio, odit! Perferendis natus, impedit itaque sed in dolore ducimus provident deleniti, dolor dignissimos, ea aliquid earum nostrum? Iste odit dignissimos eum!
-        Animi laborum quod velit minus, sapiente facilis at ratione quia nostrum iste nobis nam aperiam vel, temporibus repellendus atque veritatis alias! Veniam ipsum tempore modi, sapiente ipsa repellendus ducimus velit.
-        Consequatur nulla et totam quis sapiente fugit explicabo, temporibus, excepturi eos voluptatem repellendus facilis esse officiis laudantium ea velit odit. Sint consequuntur nesciunt sunt est nulla assumenda impedit harum ut?
-        Quisquam amet ad tempora sit perferendis at dignissimos itaque repellat possimus commodi aliquid natus laboriosam consectetur aspernatur ipsum eius rem nesciunt, assumenda adipisci? Ex maiores rerum iusto quae dolorem ipsum?
-        Quisquam sit enim distinctio quibusdam earum deserunt accusamus facere, possimus sint velit repudiandae deleniti saepe eum omnis harum non nisi est eaque esse ad. Laborum earum dolore impedit deserunt illum!
-        Porro possimus natus in aut pariatur? Alias provident ut voluptatem quae amet aperiam ipsum obcaecati libero officiis nesciunt vel aliquam, deserunt velit quod omnis, vero assumenda blanditiis, quibusdam placeat pariatur.
-        Quisquam cupiditate enim voluptatum, soluta cum quos quidem nihil eligendi, neque impedit veritatis optio ab inventore, distinctio numquam. Illum ipsam repellat corporis magnam cumque dolore possimus neque autem architecto obcaecati.
-        Odit dignissimos corrupti vero modi aperiam sit, deserunt error. Fugiat, enim sit aperiam consequatur eos minus provident quaerat sequi mollitia ad! Ea nihil aperiam magnam neque vel unde deleniti accusamus.
-        Consectetur natus, hic quaerat ut itaque maxime sint maiores quidem ducimus perspiciatis, ipsam, omnis nostrum. Maxime voluptatibus dignissimos placeat, esse nisi quos, dolor et ratione repudiandae necessitatibus sed dicta. Perferendis?
-        Dolore earum nostrum accusamus deserunt suscipit cum in voluptatibus sint facere voluptas, maxime, corporis totam libero nemo facilis debitis fuga cupiditate hic ipsam esse perferendis corrupti amet. Dolor, quis deserunt!
-        Libero optio magnam deserunt vitae fugiat vel quos vero exercitationem facilis impedit. Cumque deleniti provident labore quo, necessitatibus asperiores ad veritatis consequuntur atque ea iusto debitis libero voluptatem eaque optio.
-        Perspiciatis inventore natus voluptates ab reiciendis vel omnis, facere molestiae molestias fugit itaque fugiat nostrum impedit quidem, vero suscipit! Dicta sunt id magni sed ullam laborum quas omnis. Accusamus, tenetur.
-        Laboriosam officia nesciunt tempore? Esse recusandae quidem corrupti quae repudiandae illo corporis iste labore fugiat! Eligendi, distinctio. Iusto perspiciatis et repellendus quam, consequuntur fuga minima a hic odit unde est!
-        Similique voluptate vel sequi cupiditate error cumque ex harum corporis! Excepturi repudiandae, esse blanditiis laborum dolores ea sed necessitatibus placeat nihil? Vel, natus! Sapiente maxime dolorem, labore illum ipsum velit!
-        Similique nostrum, corporis officiis ratione nesciunt quae delectus culpa dolore eum, laboriosam incidunt? Culpa aliquam soluta amet voluptas reiciendis laboriosam exercitationem, perspiciatis, odit ipsa atque non repellat temporibus praesentium illum.
-    </div>
+   
+    <mat-sidenav-content class="sidevav-content">
+        
+    
+        <router-outlet></router-outlet>
         <div style="height: 88vh;"></div>
-        <router-outlet>
-        </router-outlet>
+        
     </mat-sidenav-content>
-</mat-sidenav-container>
+    
+    
 
+</mat-sidenav-container>
 

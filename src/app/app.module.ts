@@ -14,12 +14,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { ProcesosComponent } from './components/procesos/procesos.component';
+import { SobreApiComponent } from './components/sobre-api/sobre-api.component';
 
+//importación de módulos y componentes
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
+    InicioComponent,
+    ProcesosComponent,
+    SobreApiComponent,
 
   ],
   imports: [

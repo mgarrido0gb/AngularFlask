@@ -5,28 +5,34 @@
     
 }
 
+
+/*se deja fijo el toolbar*/
 .toolbar .toolbar-row{
     position: fixed;
 }
 
-
+/*se añade color a la barra lateral y se le da el ancho de apertura*/
 .apertura{ 
     width: 23%;
     background: midnightblue;
     
 }
 
-
+/*se añade diseño al tipo de letra del navbar*/
 .container .apertura .lista-sidenav .campos-sidenav {
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
     color: white;
+   
 }
 
-
+/* al momento se pasar ppor encima de las rutas , efecto de color*/
 .container .apertura .lista-sidenav .campos-sidenav:hover {
     background: rgb(49, 49, 253);
     color: white;
     transition-duration: 0.7s;
     font-size: 19px;
 }
+
+
+

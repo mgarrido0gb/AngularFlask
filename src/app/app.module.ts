@@ -17,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ProcesosComponent } from './components/procesos/procesos.component';
 import { SobreApiComponent } from './components/sobre-api/sobre-api.component';
-
+import { UsuariosServices } from './components/procesos/usuarios.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 //importación de módulos y componentes
 
 @NgModule({
@@ -37,9 +38,13 @@ import { SobreApiComponent } from './components/sobre-api/sobre-api.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UsuariosServices
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

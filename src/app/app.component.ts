@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { UsuariosServices } from './components/procesos/usuarios.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularFlask';
+  usuarios:any;
+
+  constructor(public usuario:UsuariosServices){}
+
+  ngOnInit(){
+    this.usuario.getUsuarios().subscribe(
+      (r) => {this.usuarios = r; console.log(r)},
+      (e) => {console.log(e)}
+    )
+  }
 }

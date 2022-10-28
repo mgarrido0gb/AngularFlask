@@ -1,5 +1,4 @@
 import { Component,OnInit } from '@angular/core';
-import { UsuariosServices } from './components/procesos/usuarios.service';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +6,11 @@ import { UsuariosServices } from './components/procesos/usuarios.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  usuarios:any;
+  
 
-  constructor(public usuario:UsuariosServices){}
+  constructor(){}
 
   ngOnInit(){
-    this.usuario.getUsuarios().subscribe(
-      (r) => {this.usuarios = r; console.log(r)},
-      (e) => {console.log(e)}
-    )
+    
   }
 }

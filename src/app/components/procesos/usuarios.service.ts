@@ -8,7 +8,7 @@ import { HttpClient } from "@angular/common/http";
 
 export class UsuariosServices
 {
-    private API_SERVER = "http://localhost:4000/rutas/usuarios"
+    private API_SERVER = '/rutas/usuarios'
 
     constructor(public http:HttpClient){}
 

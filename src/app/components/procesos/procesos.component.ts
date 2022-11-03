@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UsuariosServices } from '../procesos/usuarios.service';
-import { Usuarios } from './usuarios';
+import { IUsuarios } from './usuarios';
 
 @Component({
   selector: 'app-procesos',
@@ -9,14 +9,16 @@ import { Usuarios } from './usuarios';
   styleUrls: ['./procesos.component.css']
 })
 export class ProcesosComponent implements OnInit {
-
+  public usuarios:Array<any>=[]
   constructor(private api:UsuariosServices,private router:Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.api.getUsuarios().subscribe(data =>{
-      console.log(data)
+       this.usuarios = data
+       console.log(data)
+      
     })
     
-  }
+  } 
 
 }

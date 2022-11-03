@@ -19,6 +19,7 @@ import { ProcesosComponent } from './components/procesos/procesos.component';
 import { SobreApiComponent } from './components/sobre-api/sobre-api.component';
 import { UsuariosServices } from './components/procesos/usuarios.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ObjectToArrayPipe } from './components/procesos/objectToArray';
 //importación de módulos y componentes
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     InicioComponent,
     ProcesosComponent,
     SobreApiComponent,
+    ObjectToArrayPipe
 
   ],
   imports: [

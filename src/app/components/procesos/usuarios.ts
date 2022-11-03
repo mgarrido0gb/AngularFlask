@@ -1,4 +1,4 @@
-export class Usuarios{
+export class IUsuarios{
 
     public correo:String='';
     public nombre:String='';

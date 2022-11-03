@@ -1,9 +1,11 @@
 import { Injectable } from "@angular/core";
 import { Observable } from 'rxjs'
 
-import { HttpClient } from "@angular/common/http";
+import { HttpClient ,HttpHeaders } from "@angular/common/http";
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 
 
 export class UsuariosServices
@@ -14,6 +16,6 @@ export class UsuariosServices
 
     //metodo que lista endpoint
     public getUsuarios():Observable<any>{
-        return this.http.get(this.API_SERVER)
+        return this.http.get<any>(this.API_SERVER);
     }
 }

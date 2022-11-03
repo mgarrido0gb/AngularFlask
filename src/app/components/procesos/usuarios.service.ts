@@ -10,7 +10,7 @@ import { HttpClient ,HttpHeaders } from "@angular/common/http";
 
 export class UsuariosServices
 {
-    private API_SERVER = '/rutas/usuarios'
+    API_SERVER = '/rutas/usuarios'
 
     constructor(public http:HttpClient){}
 

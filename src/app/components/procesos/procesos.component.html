@@ -15,7 +15,6 @@
 <table class="table table-dark" id="tabla" style="margin:10px;">
     <thead>
       <tr>
-        <th scope="col">#</th>
         <th scope="col">correo</th>
         <th scope="col">nombre</th>
         <th scope="col">telefono</th>
@@ -23,7 +22,6 @@
     </thead>
     <tbody>
       <tr *ngFor="let usuario of usuarios | ObjToArray">
-        <th scope="row">1</th>
         <td>{{usuario.correo}}</td>
         <td>{{usuario.nombre}}</td>
         <td>{{usuario.telefono}}</td>

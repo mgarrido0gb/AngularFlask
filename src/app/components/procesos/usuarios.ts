@@ -1,6 +1,6 @@
-export class IUsuarios{
+export interface IUsuarios{
 
-    public correo:String='';
-    public nombre:String='';
-    public telefono:String='';
+    correo:String;
+    nombre:String;
+    telefono:String;
 }

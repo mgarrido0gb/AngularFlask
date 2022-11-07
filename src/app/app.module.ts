@@ -20,6 +20,7 @@ import { SobreApiComponent } from './components/sobre-api/sobre-api.component';
 import { UsuariosServices } from './components/procesos/usuarios.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ObjectToArrayPipe } from './components/procesos/objectToArray';
+import { FormsModule } from '@angular/forms';
 //importación de módulos y componentes
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ObjectToArrayPipe } from './components/procesos/objectToArray';
     InicioComponent,
     ProcesosComponent,
     SobreApiComponent,
-    ObjectToArrayPipe
+    ObjectToArrayPipe,
+    
 
   ],
   imports: [
@@ -41,7 +43,9 @@ import { ObjectToArrayPipe } from './components/procesos/objectToArray';
     MatIconModule,
     MatListModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+    
   ],
   providers: [
     UsuariosServices

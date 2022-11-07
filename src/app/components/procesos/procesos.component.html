@@ -9,26 +9,56 @@
 </head>
 <body>
     
-<h3 style="text-align: center; font-family:'Courier New', Courier, monospace; ">LISTADO DE USUARIOS</h3>
+  
+  <h3 style="text-align: center; font-family:'Courier New', Courier, monospace; ">LISTADO DE USUARIOS</h3>
 
 
-<table class="table table-dark" id="tabla" style="margin:10px;">
-    <thead>
-      <tr>
-        <th scope="col">correo</th>
-        <th scope="col">nombre</th>
-        <th scope="col">telefono</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let usuario of usuarios | ObjToArray">
-        <td>{{usuario.correo}}</td>
-        <td>{{usuario.nombre}}</td>
-        <td>{{usuario.telefono}}</td>
-      </tr>
+  <table class="table table-dark" id="tabla" style="margin:10px;">
+      <thead>
+        <tr>
+         <th scope="col">correo</th>
+          <th scope="col">nombre</th>
+          <th scope="col">telefono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios | ObjToArray">
+          <td>{{usuario.correo}}</td>
+          <td>{{usuario.nombre}}</td>
+          <td>{{usuario.telefono}}</td>
+        </tr>
      
-    </tbody>
+      </tbody>
   </table>
+  
+  <h3 style="text-align: center; font-family:'Courier New', Courier, monospace; ">AGREGAR USUARIOS</h3>
+
+  <form (ngSubmit)="guardarUsuario()" id="formulario">
+    <div class="form-group" style="margin: 10px;">
+      <label for="correo">Correo:</label>
+      <input type="email" class="form-control" id="correo"  [(ngModel)]="model.correo" name="correo" required #name="ngModel" formGroup="user" >
+    </div>
+
+    <div class="form-group" style="margin: 10px;">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre"  [(ngModel)]="model.nombre" name="nombre" required #name="ngModel" >
+    </div>
+    
+
+    <div class="form-group" style="margin: 10px;">
+      <label for="telefono">Teléfono</label>
+      <input type="number" class="form-control" id="telefono"  [(ngModel)]="model.telefono" name="telefono" required #name="ngModel" >
+    </div>
+
+    <button type="submit" class="btn btn-success" style="margin: 10px;" onclick="limpiarCampos()" >Agregar</button>
+    
+  
+  </form>
+
+
+  
+
+ 
 
 </body>
 </html>
